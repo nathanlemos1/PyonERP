@@ -16,7 +16,7 @@ hashed_password_str = hashed_password.decode('utf-8')
 # Monta o comando SQL
 sql = f"""
 INSERT INTO usuarios (nome, email, senha, papel) 
-VALUES ('Admin', '{user}@pyonerp.com', '{hashed_password_str}', {papel});
+VALUES ('{user}', '{user}@pyonerp.com', '{hashed_password_str}', {papel});
 """
 
 # Imprime o comando SQL
